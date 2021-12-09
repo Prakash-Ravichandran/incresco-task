@@ -1,0 +1,35 @@
+.text-style{
+    font-size: medium;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.margin{
+    margin: 10px;
+}
+
+.navbar-primary-wrapper{
+    padding: 25px;
+    box-shadow: 2px 2px grey;
+}
+
+.bold-text{
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
