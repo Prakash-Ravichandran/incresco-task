@@ -1,13 +1,14 @@
 import React from 'react';
+import Image1 from '../../images/search.png';
 
 
-const Product = ({shirtType, modelName, price}) => {
+const Product = ({shirtType, modelName, price , productImage}) => {
     return(
         <>
         <div>
             <div>
                 <span>
-                    <img></img>
+                    <img src={productImage}></img>
                 </span>
             </div>
             <div>

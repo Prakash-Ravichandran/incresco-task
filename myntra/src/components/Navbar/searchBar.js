@@ -1,5 +1,6 @@
 import React, { useEffect }  from 'react';
 import { useRef } from 'react';
+import searchBarIcon from '../../images/search.png';
 
 
 const SearchBar = () => {
@@ -15,9 +16,7 @@ const SearchBar = () => {
     return(
         <>
         <div>
-            <span>
-                <img ></img>
-                </span>
+           <i />
          <input type="search" name="search-bar" id="search-product" placeholder="Search for products,brands and more" ref={ref}  style={{padding : 10}}/>
          </div>
         </>

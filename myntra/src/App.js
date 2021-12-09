@@ -1,5 +1,6 @@
 import './App.css';
-import Navbar from './components/Navbar/navbar';
+import Navbar from './Components/Navbar/navbar';
+import HomePage from './Homepage/Homepage';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className="navbar-primary-wrapper">
      <Navbar />
      </div>
+     <HomePage />
     </div>
   );
 }
