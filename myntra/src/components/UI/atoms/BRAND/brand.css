@@ -6,7 +6,8 @@
     margin-bottom: 6px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
+    display: block;
 }
 
 .brand-type-font{
