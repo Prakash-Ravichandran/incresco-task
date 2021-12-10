@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import ProductTwo from '../../images/productTwo.webp';
 import ProductThree from '../../images/productThree.webp';
 import ProductFour from '../../images/productFour.webp';
@@ -17,6 +17,18 @@ import FilterComponent from '../templates/FilterComponent';
 
 
 const HomePage = () => {
+  const refPrimary = useRef();
+
+  const hoverHandler = () => {
+     console.log(refPrimary);
+     if(refPrimary.current.classList!='flip-vertical'){
+      refPrimary.current.classList.add('flip-vertical');
+     }
+
+     else{
+           console.log( refPrimary.current.className.remove('flip-vertical'));
+           }
+     }
     return(
         <>
         <div>
@@ -25,15 +37,26 @@ const HomePage = () => {
               <Col lg={3} className='filter-row horizontal-line'>
               <p className=' brand-font '>FILTERS</p>
               </Col>
-              <Col lg={6} className='flex filter-row horizontal-line vertical-line' >
-                <div>
+              <Col lg={6} className='flex filter-row horizontal-line' >
+                <div className='flex'>
+                <div className="hover-class" ref={refPrimary} onClick={hoverHandler}>
                 <span className='label-font padding'>Bundle</span>
-                <span className='label-font padding'>Bundle</span>
-                <span className='label-font padding'>Bundle</span>
+                <i class="fa fa-angle-down"></i>
+                </div>
+                <div className="hover-class">
+                <span className='label-font padding'>Country of Origin</span>
+                <i class="fa fa-angle-down"></i>
+                </div>
+                <div className="hover-class">
+                <span className='label-font padding'>Size</span>
+                <i class="fa fa-angle-down"></i>
+                </div>
                 </div>
               </Col>
-              <Col lg={3} className='filter-row horizontal-line vertical-line'>
-                sort by
+              <Col lg={3} className='filter-row horizontal-line sort-box'>
+                Sort by :
+                <span><b> Recommended</b></span>
+                <span> <i class="fa fa-angle-down"></i></span>
               </Col>
             </Row>
             <Row>
