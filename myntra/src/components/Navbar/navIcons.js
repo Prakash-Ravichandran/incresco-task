@@ -1,11 +1,11 @@
 import React from'react';
+import './navitem.css';
 
-const NavIcon = ({imageItem, imageCaption}) => {
+const NavIcon = ({iconName, imageCaption, }) => {
     return(
         <>
-         <figure>
-             <img src={imageItem}>
-             </img>
+         <figure className="align-icons">
+         <i class={iconName}></i>
              <figurecaption className="bold-text">
                  {imageCaption}
              </figurecaption>

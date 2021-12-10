@@ -40,7 +40,7 @@
     font-size: 14px;
     height: 20px;
     line-height: 24px;
-    width: 95%;
+    /* width: 95%; */
     color: #696e79;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -51,4 +51,14 @@
     border-radius: 0 4px 4px 0;
     border-left: 0;
     background: #f5f5f6;
+}
+
+.align-icons{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+}
+
+.align-icons i{
+    text-align: center;
 }

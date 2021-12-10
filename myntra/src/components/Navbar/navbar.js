@@ -1,6 +1,6 @@
 import React from 'react';
 import  NavItem from './navItem';
-import '../Navbar/navitem.css';
+import './navitem.css';
 import SearchBar from './searchBar';
 import NavIcon from './navIcons';
 
@@ -18,9 +18,9 @@ const Navbar = () => {
             </div>
             <div className="navbar-wrapper">
             <SearchBar />
-            <NavIcon imageCaption="Profile" />
-            <NavIcon imageCaption="WishList" />
-            <NavIcon imageCaption="Bag" />
+            <NavIcon imageCaption="Profile" iconName={'fa fa-user'}/>
+            <NavIcon imageCaption="WishList" iconName={"fa fa-heart"}/>
+            <NavIcon imageCaption="Bag" iconName={"fa fa-cart-arrow-down"}/>
             </div>
             </div>
          </React.Fragment>

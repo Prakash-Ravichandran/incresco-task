@@ -17,7 +17,6 @@ const SearchBar = () => {
     return(
         <>
         <div>
-           <i />
          <input type="search" name="search-bar" id="search-product" placeholder="Search for products,brands and more" ref={ref}  style={{padding : 10}} className='search-bar'/>
          </div>
         </>
