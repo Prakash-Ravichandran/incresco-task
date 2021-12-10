@@ -10,7 +10,7 @@ import Discount from '../UI/atoms/PRICE/discount';
 const Product = ({brandName, brandType, discountedPrice, productStrike, discountPercentage, productImage}) => {
     return(
         <>
-        <div>
+        <div className='align-product-margin'>
             <div>
                 <span>
                     <img src={productImage}></img>
