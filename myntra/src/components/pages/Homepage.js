@@ -6,6 +6,7 @@ import '../pages/HomePage.css';
 import DropDown from '../UI/atoms/DROPDOWNS/dropDown';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../../Components/UI/atoms/LABEL/label.css';
+import Categories from '../templates/categories';
 
 
 const HomePage = () => {
@@ -15,7 +16,7 @@ const HomePage = () => {
           <Container className="no-margin" fluid>
             <Row>
               <Col lg={3} className='filter-row horizontal-line'>
-              <p className=' brand-font'>FILTERS</p>
+              <p className=' brand-font '>FILTERS</p>
               </Col>
               <Col lg={6} className='flex filter-row horizontal-line vertical-line' >
                 <div>
@@ -26,6 +27,14 @@ const HomePage = () => {
               </Col>
               <Col lg={3} className='filter-row horizontal-line vertical-line'>
                 sort by
+              </Col>
+            </Row>
+            <Row>
+              <Col lg={3} className="horizontal-line vertical-line">
+              <Categories />
+              </Col>
+              <Col lg={9}>
+              <span>Hello</span>
               </Col>
             </Row>
         

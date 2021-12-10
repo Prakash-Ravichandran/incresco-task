@@ -4,7 +4,7 @@ import React from 'react';
 const Label =({labelValue}) => {
     return(
         <>
-        <label>{labelValue}</label>
+        <label className='align-label'>{labelValue}</label>
         </>
     );
 }
