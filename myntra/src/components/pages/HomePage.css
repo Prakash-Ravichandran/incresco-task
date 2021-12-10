@@ -50,3 +50,12 @@
     background-color: #fff;
     border: 1px solid #d4d5d9;
 }
+
+.shift-down{
+    margin-top: 20px;
+}
+.horizontal-line-end{
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #eaeaec;
+}

@@ -31,7 +31,7 @@ const HomePage = () => {
      }
     return(
         <>
-        <div>
+        <div className='shift-down'>
           <Container className="no-margin" fluid>
             <Row>
               <Col lg={3} className='filter-row horizontal-line'>
@@ -106,8 +106,38 @@ const HomePage = () => {
               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductNine}/>
               </Col>
               </Row>
+              <Row>
+              <Col lg={3}>
+               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductTwo}/>
+              </Col>  
+               <Col lg={3}>
+               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductThree}/>
+              </Col>  
+               <Col lg={3}>
+               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductFour}/>
+              </Col>  
+               <Col lg={3}>
+               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductFive}/>
+              </Col>
+              </Row>
+              <Row>
+              <Col lg={3}>
+              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductSix}/>
+              </Col>
+              <Col lg={3}>
+              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductSeven}/>
+              </Col>
+              <Col lg={3}>
+              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductEight}/>
+              </Col>
+              <Col lg={3} className='horizontal-line-end'>
+              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductNine}/>
+              </Col>
+              </Row> 
               </Col>
             </Row>
+            <div className='horizontal-line-end'>
+            </div>
         </Container>
         </div>
         </>

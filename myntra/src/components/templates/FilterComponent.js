@@ -19,6 +19,15 @@ const FilterComponent = ({filterType}) => {
         <div>
         <CheckboxLabel checkboxvalue={'Mshirts'} labelvalue={'Mshirts'} identityName={'M-shirts'} itemCount='12506'/>
         </div>
+        <div>
+        <CheckboxLabel checkboxvalue={'Mshirts'} labelvalue={'Mshirts'} identityName={'M-shirts'} itemCount='12506'/>
+        </div>
+        <div>
+        <CheckboxLabel checkboxvalue={'Mshirts'} labelvalue={'Mshirts'} identityName={'M-shirts'} itemCount='12506'/>
+        </div>
+        <div>
+        <CheckboxLabel checkboxvalue={'Mshirts'} labelvalue={'Mshirts'} identityName={'M-shirts'} itemCount='12506'/>
+        </div>
         </div>
         </>
     );
