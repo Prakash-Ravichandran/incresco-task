@@ -126,10 +126,10 @@ const HomePage = () => {
               <Col lg={9}>
               <Row>
                <Col lg={3}>
-               <Product brandName={productName} brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductTwo}/>
+               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductTwo}/>
               </Col>  
                <Col lg={3}>
-               <Product brandName={productNameSecondary}  brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductThree}/>
+               <Product brandName="WROGN"  brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductThree}/>
               </Col>  
                <Col lg={3}>
                <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductFour}/>
