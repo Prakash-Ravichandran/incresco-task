@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import Axios from 'axios';
 import ProductTwo from '../../images/productTwo.webp';
 import ProductThree from '../../images/productThree.webp';
 import ProductFour from '../../images/productFour.webp';
@@ -16,10 +17,16 @@ import '../../Components/UI/atoms/LABEL/label.css';
 import '../templates/categories.css';
 import FilterComponent from '../templates/FilterComponent';
 import Radio from '../UI/atoms/RADIO/RadioComponent';
+import axios from 'axios';
 
 
 const HomePage = () => {
   const refPrimary = useRef();
+  const [productName,setProductName] = useState('');
+  const [productNameSecondary,setProductNameSecondary] = useState('');
+
+  var Products= [];
+  var Categories =[];
 
   const hoverHandler = () => {
      console.log(refPrimary);
@@ -31,6 +38,27 @@ const HomePage = () => {
            console.log( refPrimary.current.className.remove('flip-vertical'));
            }
      }
+     useEffect(() => {
+      axios.get(`https://demo7303877.mockable.io/`)
+      .then((res) => {
+        console.log(res);
+        Products = res.data.products;
+        console.log(Products);
+        Products.map((current, index) => {
+          console.log(current.category);
+           setProductName(current.category);
+           setProductNameSecondary(current.category);
+           Categories = current.category;
+           
+        });
+        console.log(Categories);
+        console.log(res.data.products[0].additionalInfo);
+      })
+      .catch((err) => {
+        console.log(err.Message);
+      } )
+     },[Categories]);  
+  
     return(
         <>
         <div className='shift-down'>
@@ -95,10 +123,10 @@ const HomePage = () => {
               <Col lg={9}>
               <Row>
                <Col lg={3}>
-               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductTwo}/>
+               <Product brandName={productName} brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductTwo}/>
               </Col>  
                <Col lg={3}>
-               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductThree}/>
+               <Product brandName={productNameSecondary}  brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductThree}/>
               </Col>  
                <Col lg={3}>
                <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductFour}/>
@@ -149,7 +177,16 @@ const HomePage = () => {
               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductNine}/>
               </Col>
               </Row> 
-              </Col>
+              <Row>
+                {
+                  Products.map((currentValue, index) => {
+                    let brandName= currentValue.category;
+                    <Product brandName={brandName} key={index} brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductNine}/>
+
+                  })
+                }
+              </Row>
+              </Col> 
             </Row>
         </Container>
         </div>
