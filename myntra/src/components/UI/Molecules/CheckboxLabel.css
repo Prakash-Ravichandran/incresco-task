@@ -6,8 +6,11 @@
 .item-count-font{
     color: #94969f;
     font-size: 11px;
+    cursor: pointer;
 }
+
 .shirt-name-font{
     color: #94969f;
     font-size: 14px;
+    cursor: pointer;
 }
