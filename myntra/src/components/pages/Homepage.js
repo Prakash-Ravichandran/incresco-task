@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Axios from 'axios';
 import ProductTwo from '../../images/productTwo.webp';
 import ProductThree from '../../images/productThree.webp';
 import ProductFour from '../../images/productFour.webp';
@@ -22,10 +21,11 @@ import axios from 'axios';
 
 const HomePage = () => {
   const refPrimary = useRef();
+  const[Materials,setMaterials] = useState([]);
   const [productName,setProductName] = useState('');
   const [productNameSecondary,setProductNameSecondary] = useState('');
 
-  var Products= [];
+  var Products = [];
   var Categories =[];
 
   const hoverHandler = () => {
@@ -43,6 +43,7 @@ const HomePage = () => {
       .then((res) => {
         console.log(res);
         Products = res.data.products;
+       setMaterials(res.data.products);
         console.log(Products);
         Products.map((current, index) => {
           console.log(current.category);
@@ -91,18 +92,20 @@ const HomePage = () => {
             </Row>
             <Row>
               <Col lg={3} >
+               <div className="vertical-line" >
+               <p className='brand-font '>{'GENDER'}</p> 
                <div >
-               <p className='brand-font'>{'GENDER'}</p> 
                <Radio identityName={'Men'} radioValue={'Men'} labelValue={'Men'} />
-              </div> 
+               </div>
                <div >
                <Radio identityName={'Women'} radioValue={'Women'} labelValue={'Women'} />
               </div> 
                <div >
                <Radio identityName={'Boys'} radioValue={'Boys'} labelValue={'Boys'} />
               </div> 
-               <div className="horizontal-line vertical-line">
+               <div className="horizontal-line">
                <Radio identityName={'Girls'} radioValue={'Girls'} labelValue={'Girls'} />
+              </div> 
               </div> 
                <div className="horizontal-line vertical-line">
                <FilterComponent filterType={'CATEGORIES'}/>
