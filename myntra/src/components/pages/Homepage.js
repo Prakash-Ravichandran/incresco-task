@@ -13,7 +13,9 @@ import '../pages/HomePage.css';
 import DropDown from '../UI/atoms/DROPDOWNS/dropDown';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../../Components/UI/atoms/LABEL/label.css';
+import '../templates/categories.css';
 import FilterComponent from '../templates/FilterComponent';
+import Radio from '../UI/atoms/RADIO/RadioComponent';
 
 
 const HomePage = () => {
@@ -61,6 +63,19 @@ const HomePage = () => {
             </Row>
             <Row>
               <Col lg={3} >
+               <div >
+               <p className='brand-font'>{'GENDER'}</p> 
+               <Radio identityName={'Men'} radioValue={'Men'} labelValue={'Men'} />
+              </div> 
+               <div >
+               <Radio identityName={'Women'} radioValue={'Women'} labelValue={'Women'} />
+              </div> 
+               <div >
+               <Radio identityName={'Boys'} radioValue={'Boys'} labelValue={'Boys'} />
+              </div> 
+               <div className="horizontal-line vertical-line">
+               <Radio identityName={'Girls'} radioValue={'Girls'} labelValue={'Girls'} />
+              </div> 
                <div className="horizontal-line vertical-line">
                <FilterComponent filterType={'CATEGORIES'}/>
               </div> 
@@ -136,8 +151,6 @@ const HomePage = () => {
               </Row> 
               </Col>
             </Row>
-            <div className='horizontal-line-end'>
-            </div>
         </Container>
         </div>
         </>

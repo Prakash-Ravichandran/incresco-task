@@ -3,6 +3,7 @@ import Label from '../UI/atoms/LABEL/Label';
 import Checkbox from '../UI/atoms/CHECKBOX/Checkbox';
 import './categories.css';
 import CheckboxLabel from '../UI/Molecules/CheckboxLabel';
+import Radio from '../UI/atoms/RADIO/RadioComponent';
 
 
 const FilterComponent = ({filterType}) => {
