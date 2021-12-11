@@ -10,11 +10,15 @@ const Navbar = () => {
          <React.Fragment>
              <div className="navbar-wrapper">
              <div className="flex ">
+              
             <NavItem items="MEN"/>
             <NavItem items="WOMEN"/>
             <NavItem items="KIDS"/>
             <NavItem items="HOME & LIVING"/>
             <NavItem items="OFFERS"/>
+            <span>
+                 <i class="fa-light fa-circle-m"></i>
+                 </span>
             </div>
             <div className="navbar-wrapper">
             <SearchBar />
