@@ -32,6 +32,7 @@ const HomePage = () => {
 
 
     const myState = useSelector((State) => State);
+    console.log(myState);
     const dispatch = useDispatch();
     
 
@@ -144,58 +145,58 @@ const HomePage = () => {
               <Col lg={9}>
               <Row>
                <Col lg={3}>
-               <Product brandName={myState.brandName} brandType={myState.brandType} discountedPrice={myState.discountedPrice} productStrike={myState.productStrike} discountPercentage={myState.discountPercentage} productImage={ProductTwo}/>
+               <Product brandName={myState.brandOne} brandType={myState.typeOne} discountedPrice={myState.discountedPrice} productStrike={myState.productStrike} discountPercentage={myState.discountPercentage} productImage={myState.productOne}/>
               </Col>  
                <Col lg={3}>
-               <Product brandName={myState.brandName}  brandType={myState.brandType}  discountedPrice={myState.discountedPrice} productStrike={myState.productStrike} discountPercentage={myState.discountPercentage} productImage={ProductThree}/>
+               <Product brandName={myState.brandTwo}  brandType={myState.typeTwo}  discountedPrice={myState.discountedPrice} productStrike={myState.productStrike} discountPercentage={myState.discountPercentage} productImage={myState.productTwo}/>
               </Col>  
                <Col lg={3}>
-               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductFour}/>
+               <Product brandName={myState.brandThree} brandType={myState.typeThree} discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productThree}/>
               </Col>  
                <Col lg={3}>
-               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductFive}/>
+               <Product brandName={myState.brandFour} brandType={myState.typeFour} discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productFour}/>
               </Col>  
               </Row> 
               <Row>
               <Col lg={3}>
-              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductSix}/>
+              <Product brandName={myState.brandFive}   brandType={myState.typeFive} discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productFive}/>
               </Col>
               <Col lg={3}>
-              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductSeven}/>
+              <Product brandName={myState.brandSix}   brandType={myState.typeSix} discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productSix}/>
               </Col>
               <Col lg={3}>
-              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductEight}/>
+              <Product brandName={myState.brandSeven}  brandType={myState.typeSeven} discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productSeven}/>
               </Col>
               <Col lg={3}>
-              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductNine}/>
-              </Col>
-              </Row>
-              <Row>
-              <Col lg={3}>
-               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductTwo}/>
-              </Col>  
-               <Col lg={3}>
-               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductThree}/>
-              </Col>  
-               <Col lg={3}>
-               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductFour}/>
-              </Col>  
-               <Col lg={3}>
-               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductFive}/>
+              <Product brandName={myState.brandEight}  brandType={myState.typeEight} discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productEight}/>
               </Col>
               </Row>
               <Row>
               <Col lg={3}>
-              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductSix}/>
+               <Product brandName={myState.brandNine}  brandType={myState.typeNine} discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productNine}/>
+              </Col>  
+               <Col lg={3}>
+               <Product brandName={myState.brandTen}   brandType={myState.typeTen} discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productTen}/>
+              </Col>  
+               <Col lg={3}>
+               <Product brandName={myState.brandEleven}  brandType={myState.typeEleven} discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productEleven}/>
+              </Col>  
+               <Col lg={3}>
+               <Product brandName={myState.brandTwelve}  brandType={myState.typeTwelve} discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productTwelve}/>
+              </Col>
+              </Row>
+              <Row>
+              <Col lg={3}>
+              <Product brandName={myState.brandThirteen}  brandType={myState.typeThirteen}  discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productThirteen}/>
               </Col>
               <Col lg={3}>
-              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductSeven}/>
+              <Product brandName={myState.brandFourteen}  brandType={myState.typeFourteen}  discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productFourteen}/>
               </Col>
               <Col lg={3}>
-              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductEight}/>
+              <Product brandName={myState.brandFifteen}  brandType={myState.typeFifteen}  discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productFifteen}/>
               </Col>
               <Col lg={3} className='horizontal-line-end'>
-              <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductNine}/>
+              <Product brandName={myState.brandSixteen}  brandType={myState.typeSixteen}  discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productSixteen}/>
               </Col>
               </Row> 
               <Row>

@@ -1,20 +1,12 @@
+import {Men, Women} from '../../Constants/Constants';
 
 const Reducer = (state, action) => {
-    var Men = {
-        brandName: 'M-shirt',
-        brandType: 'Slim-fit-colour-blocked-cotton',
-        discountedPrice: 200,
-        productStrike: 250,
-        discountPercentage: 50
-    };
-    
+
+       
      switch(action.type){
          case 'MEN': return Men;
 
-         case 'WOMEN': return {
-            brandType: 'Saree'
-
-         };
+         case 'WOMEN': return Women;
          case 'BOYS' : return {
             brandType: 'Jeans'
          };
