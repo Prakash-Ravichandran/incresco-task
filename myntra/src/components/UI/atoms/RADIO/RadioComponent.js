@@ -4,9 +4,10 @@ import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 
 
-const Radio =({identityName,radioValue, labelValue}) => {
-  const myState = useSelector((State) => State);
-  const dispatch = useDispatch();
+const Radio =({identityName,radioValue, labelValue, actionType}) => {
+    const myState = useSelector((State) => State);
+    const dispatch = useDispatch();
+    console.log(myState);
     return(
         <>
         <label htmlFor={identityName} name="radio">
@@ -14,12 +15,12 @@ const Radio =({identityName,radioValue, labelValue}) => {
                       name='radio' 
                       id={identityName} 
                       value={radioValue} 
-                      onClick={() => { 
+                      onClick={ () => {
                           dispatch({
-                              type: 'MEN'
+                              type: actionType
                           })
-
-               }}/>
+                      }}
+                      />
                <span className='align-margin shirt-name-font'>{labelValue}</span>
            </label>
         </>

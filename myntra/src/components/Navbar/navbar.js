@@ -3,8 +3,6 @@ import  NavItem from './navItem';
 import './navitem.css';
 import SearchBar from './searchBar';
 import NavIcon from './navIcons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 
 
 const Navbar = () => {
@@ -18,7 +16,6 @@ const Navbar = () => {
             <NavItem items="KIDS"/>
             <NavItem items="HOME & LIVING"/>
             <NavItem items="OFFERS"/>
-            <FontAwesomeIcon icon={["fab", "github"]} />
             </div>
             <div className="navbar-wrapper">
             <SearchBar />

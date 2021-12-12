@@ -19,6 +19,8 @@ import Radio from '../UI/atoms/RADIO/RadioComponent';
 import axios from 'axios';
 
 
+
+
 const HomePage = () => {
   const refPrimary = useRef();
   const[Materials,setMaterials] = useState([]);
@@ -38,27 +40,27 @@ const HomePage = () => {
            console.log( refPrimary.current.className.remove('flip-vertical'));
            }
      }
-     useEffect(() => {
-      axios.get(`https://demo7303877.mockable.io/`)
-      .then((res) => {
-        console.log(res);
-        Products = res.data.products;
-       setMaterials(res.data.products);
-        console.log(Products);
-        Products.map((current, index) => {
-          console.log(current.category);
-           setProductName(current.category);
-           setProductNameSecondary(current.category);
-           Categories = current.category;
+    //  useEffect(() => {
+    //   axios.get(`https://demo7303877.mockable.io/`)
+    //   .then((res) => {
+    //     console.log(res);
+    //     Products = res.data.products;
+    //    setMaterials(res.data.products);
+    //     console.log(Products);
+    //     Products.map((current, index) => {
+    //       console.log(current.category);
+    //        setProductName(current.category);
+    //        setProductNameSecondary(current.category);
+    //        Categories = current.category;
            
-        });
-        console.log(Categories);
-        console.log(res.data.products[0].additionalInfo);
-      })
-      .catch((err) => {
-        console.log(err.Message);
-      } )
-     },[Categories]);  
+    //     });
+    //     console.log(Categories);
+    //     console.log(res.data.products[0].additionalInfo);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err.Message);
+    //   } )
+    //  },[Categories]);  
   
     return(
         <>
@@ -95,16 +97,24 @@ const HomePage = () => {
                <div className="vertical-line" >
                <p className='brand-font '>{'GENDER'}</p> 
                <div >
-               <Radio identityName={'Men'} radioValue={'Men'} labelValue={'Men'} />
+               <Radio identityName={'Men'} radioValue={'Men'} labelValue={'Men'} 
+               actionType='MEN'
+               />
                </div>
                <div >
-               <Radio identityName={'Women'} radioValue={'Women'} labelValue={'Women'} />
+               <Radio identityName={'Women'} radioValue={'Women'} labelValue={'Women'} 
+                actionType='WOMEN'
+               />
               </div> 
                <div >
-               <Radio identityName={'Boys'} radioValue={'Boys'} labelValue={'Boys'} />
+               <Radio identityName={'Boys'} radioValue={'Boys'} labelValue={'Boys'} 
+                actionType='BOYS'
+               />
               </div> 
                <div className="horizontal-line">
-               <Radio identityName={'Girls'} radioValue={'Girls'} labelValue={'Girls'} />
+               <Radio identityName={'Girls'} radioValue={'Girls'} labelValue={'Girls'} 
+               actionType='GIRLS'
+               />
               </div> 
               </div> 
                <div className="horizontal-line vertical-line">
