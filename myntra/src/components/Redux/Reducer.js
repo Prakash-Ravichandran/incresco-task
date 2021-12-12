@@ -1,9 +1,16 @@
-const Reducer = (state, action) => {
-     switch(action.type){
-         case 'MEN': return {
-             brandType: 'T-shirt'
 
-         };
+const Reducer = (state, action) => {
+    var Men = {
+        brandName: 'M-shirt',
+        brandType: 'Slim-fit-colour-blocked-cotton',
+        discountedPrice: 200,
+        productStrike: 250,
+        discountPercentage: 50
+    };
+    
+     switch(action.type){
+         case 'MEN': return Men;
+
          case 'WOMEN': return {
             brandType: 'Saree'
 
@@ -14,6 +21,9 @@ const Reducer = (state, action) => {
          case 'GIRLS' : return {
             brandType: 'Uniform'
          };
+         default: return{
+             brandType : 'Mens wear'
+         }
 
      }
 

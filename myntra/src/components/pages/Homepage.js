@@ -17,7 +17,7 @@ import '../templates/categories.css';
 import FilterComponent from '../templates/FilterComponent';
 import Radio from '../UI/atoms/RADIO/RadioComponent';
 import axios from 'axios';
-
+import { useSelector, useDispatch } from 'react-redux';
 
 
 
@@ -29,6 +29,14 @@ const HomePage = () => {
 
   var Products = [];
   var Categories =[];
+
+
+    const myState = useSelector((State) => State);
+    const dispatch = useDispatch();
+    
+
+
+ 
 
   const hoverHandler = () => {
      console.log(refPrimary);
@@ -136,10 +144,10 @@ const HomePage = () => {
               <Col lg={9}>
               <Row>
                <Col lg={3}>
-               <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductTwo}/>
+               <Product brandName={myState.brandName} brandType={myState.brandType} discountedPrice={myState.discountedPrice} productStrike={myState.productStrike} discountPercentage={myState.discountPercentage} productImage={ProductTwo}/>
               </Col>  
                <Col lg={3}>
-               <Product brandName="WROGN"  brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductThree}/>
+               <Product brandName={myState.brandName}  brandType={myState.brandType}  discountedPrice={myState.discountedPrice} productStrike={myState.productStrike} discountPercentage={myState.discountPercentage} productImage={ProductThree}/>
               </Col>  
                <Col lg={3}>
                <Product brandName="WROGN" brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductFour}/>
