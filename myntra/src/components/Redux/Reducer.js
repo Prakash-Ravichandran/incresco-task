@@ -1,4 +1,4 @@
-import {Men, Women} from '../../Constants/Constants';
+import {Men, Women, Girl, Boy} from '../../Constants/Constants';
 
 const Reducer = (state, action) => {
 
@@ -7,16 +7,12 @@ const Reducer = (state, action) => {
          case 'MEN': return Men;
 
          case 'WOMEN': return Women;
-         case 'BOYS' : return {
-            brandType: 'Jeans'
-         };
-         case 'GIRLS' : return {
-            brandType: 'Uniform'
-         };
-         default: return{
-             brandType : 'Mens wear'
-         }
 
+         case 'BOYS' : return Boy;
+
+         case 'GIRLS' : return Girl;
+
+         default: return Boy;
      }
 
 }
