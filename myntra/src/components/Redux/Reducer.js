@@ -14,7 +14,6 @@ const Reducer = (state, action) => {
 
          default: return Boy;
      }
-
 }
 
 export default Reducer;

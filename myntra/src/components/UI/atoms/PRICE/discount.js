@@ -10,4 +10,8 @@ const Discount = ({discountPercentage}) => {
     );
 }
 
+Discount.defaultProps = {
+    discountPercentage: 25
+}
+
 export default Discount;

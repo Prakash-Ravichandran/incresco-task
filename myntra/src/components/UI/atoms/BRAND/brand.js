@@ -10,4 +10,8 @@ import './brand.css';
     );
 }
 
+Brand.defaultProps = {
+    brandName: 'Branded-Clothes'
+}
+
 export default Brand;

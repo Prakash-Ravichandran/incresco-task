@@ -9,4 +9,8 @@ const ProductStrike = ({productStrike}) => {
     );
 }
 
+ProductStrike.defaultProps = {
+    productStrike: 999 
+}
+
 export default ProductStrike;

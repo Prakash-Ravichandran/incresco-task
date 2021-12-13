@@ -27,4 +27,12 @@ const Radio =({identityName,radioValue, labelValue, actionType}) => {
     );
 }
 
+Radio.defaultProps = {
+    identityName: 'Primary-radio',
+    radioValue: 'Gender',
+    labelValue: 'Priimary-Label',
+    actionType: 'Boys'
+}
+
+
 export default Radio;

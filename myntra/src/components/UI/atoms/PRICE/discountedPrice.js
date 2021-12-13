@@ -9,4 +9,8 @@ const DiscountedPrice = ({discountedPrice}) => {
     );
 }
 
+DiscountedPrice.defaultProps = {
+    discountedPrice: 150
+}
+
 export default DiscountedPrice;

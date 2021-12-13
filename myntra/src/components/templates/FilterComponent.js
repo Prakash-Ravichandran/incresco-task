@@ -34,4 +34,8 @@ const FilterComponent = ({filterType}) => {
     );
 }
 
+FilterComponent.defaultProps = {
+    filterType: 'Categories'
+}
+
 export default FilterComponent;

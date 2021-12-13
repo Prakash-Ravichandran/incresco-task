@@ -9,4 +9,8 @@ const Checkbox = ({CheckboxValue}) => {
     );
 }
 
+Checkbox.defaultProps = {
+    CheckboxValue: 'dresses'
+}
+
 export default Checkbox;

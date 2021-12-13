@@ -9,4 +9,9 @@ const BrandType = ({brandType}) => {
     );
 }
 
+
+BrandType.defaultProps = {
+    brandType: 'Suitable sizes - XL,XXL'
+}
+
 export default BrandType;

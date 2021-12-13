@@ -16,4 +16,10 @@ const CheckboxLabel = ({checkboxvalue, labelvalue,  itemCount}) => {
     );
 }
 
+CheckboxLabel.defaultProps = {
+    checkboxvalue: 'Primary-CheckBox',
+    labelvalue: 'Primary-Value',
+    itemCount: 999 
+}
+
 export default CheckboxLabel;

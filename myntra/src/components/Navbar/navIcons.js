@@ -1,7 +1,7 @@
 import React from'react';
 import './navitem.css';
 
-const NavIcon = ({iconName, imageCaption, }) => {
+const NavIcon = ({iconName, imageCaption}) => {
     return(
         <>
          <figure className="align-icons">
@@ -12,6 +12,11 @@ const NavIcon = ({iconName, imageCaption, }) => {
          </figure>
         </>
     );
+}
+
+NavIcon.defaultProps = {
+    iconName: 'Primary-Icon',
+    imageCaption: 'Default-Image'
 }
 
 export default NavIcon;

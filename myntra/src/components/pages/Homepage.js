@@ -169,7 +169,7 @@ const HomePage = () => {
               <Col lg={3}>
               <Product brandName={myState.brandFifteen}  brandType={myState.typeFifteen}  discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productFifteen}/>
               </Col>
-              <Col lg={3} className='horizontal-line-end'>
+              <Col lg={3}>
               <Product brandName={myState.brandSixteen}  brandType={myState.typeSixteen}  discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productSixteen}/>
               </Col>
               </Row> 

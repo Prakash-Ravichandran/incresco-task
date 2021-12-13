@@ -15,4 +15,8 @@ const DropDown = ({dropDownValue}) => {
     );
 }
 
+DropDown.defaultProps = {
+    dropDownValue: 'Bundle'
+}
+
 export default DropDown;

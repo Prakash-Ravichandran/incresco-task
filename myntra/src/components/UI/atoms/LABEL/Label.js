@@ -9,4 +9,8 @@ const Label =({labelValue}) => {
     );
 }
 
+Label.defaultProps={
+    labelValue: 'label'
+}
+
 export default Label;

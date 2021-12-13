@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Navbar/navitem.css';
+import './navitem.css';
 
 
 const NavItem = ({items}) => {
@@ -9,7 +9,10 @@ const NavItem = ({items}) => {
             <span className="margin bold-text">{items}</span>
         </React.Fragment>
     );
+}
 
+NavItem.defaultProps = {
+    items: 'Home'
 }
 
 export default NavItem;

@@ -154,13 +154,13 @@ export var Women  = {
 
 
 export var Boy = {
-    brandOne: 'Jeans',
-    brandTwo: 'Full-cotton',
-    brandThree: 'Trousers',
+    brandOne: 'Plain-Jeans',
+    brandTwo: 'Casual-Jeans',
+    brandThree: 'Cotton-Jean',
     brandFour: 'Blue-Jeans',
-    brandFive: 'Yellow-shirt',
-    brandSix: 'pataloons Junior',
-    brandSeven: 'crimsone-club',
+    brandFive: 'Combo-2-Jeans',
+    brandSix: 'Pataloons Junior',
+    brandSeven: 'Crimsone-club',
     brandEight: 'Pepe-Jeans',
     brandNine: 'U.S-Polo-Kids',
     brandTen: 'UTH_Roadster',
