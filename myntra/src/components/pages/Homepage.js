@@ -30,21 +30,16 @@ const HomePage = () => {
     
     //  useEffect(() => {
     //   axios.get(`https://demo7303877.mockable.io/`)
+
     //   .then((res) => {
-    //     console.log(res);
-    //     Products = res.data.products;
     //    setMaterials(res.data.products);
-    //     console.log(Products);
     //     Products.map((current, index) => {
-    //       console.log(current.category);
     //        setProductName(current.category);
     //        setProductNameSecondary(current.category);
     //        Categories = current.category;
-           
     //     });
-    //     console.log(Categories);
-    //     console.log(res.data.products[0].additionalInfo);
     //   })
+    
     //   .catch((err) => {
     //     console.log(err.Message);
     //   } )
