@@ -23,32 +23,11 @@ import { useSelector, useDispatch } from 'react-redux';
 
 const HomePage = () => {
   const refPrimary = useRef();
-  const[Materials,setMaterials] = useState([]);
-  const [productName,setProductName] = useState('');
-  const [productNameSecondary,setProductNameSecondary] = useState('');
-
-  var Products = [];
-  var Categories =[];
-
-
-    const myState = useSelector((State) => State);
-    console.log(myState);
-    const dispatch = useDispatch();
-    
-
-
  
-
-  const hoverHandler = () => {
-     console.log(refPrimary);
-     if(refPrimary.current.classList!='flip-vertical'){
-      refPrimary.current.classList.add('flip-vertical');
-     }
-
-     else{
-           console.log( refPrimary.current.className.remove('flip-vertical'));
-           }
-     }
+  const myState = useSelector((State) => State);
+  console.log(myState);
+  const dispatch = useDispatch();
+    
     //  useEffect(() => {
     //   axios.get(`https://demo7303877.mockable.io/`)
     //   .then((res) => {
@@ -71,15 +50,15 @@ const HomePage = () => {
     //   } )
     //  },[Categories]);  
   
-    return(
+  return(
         <>
         <div className='shift-down'>
           <Container className="no-margin" fluid>
-            <Row>
-              <Col lg={3} className='filter-row horizontal-line'>
+            <Row className='horizontal-line'>
+              <Col lg={3} className='filter-row'>
               <p className=' brand-font '>FILTERS</p>
               </Col>
-              <Col lg={6} className='flex filter-row horizontal-line' >
+              <Col lg={6} className='flex filter-row' >
                 <div className='flex'>
                 <div className="hover-class" ref={refPrimary} onClick={hoverHandler}>
                 <span className='label-font padding'>Bundle</span>
@@ -199,20 +178,11 @@ const HomePage = () => {
               <Product brandName={myState.brandSixteen}  brandType={myState.typeSixteen}  discountedPrice="100" productStrike="250" discountPercentage="25" productImage={myState.productSixteen}/>
               </Col>
               </Row> 
-              <Row>
-                {
-                  Products.map((currentValue, index) => {
-                    let brandName= currentValue.category;
-                    <Product brandName={brandName} key={index} brandType="Slim-fit-colour-blocked-cotton" discountedPrice="100" productStrike="250" discountPercentage="25" productImage={ProductNine}/>
-
-                  })
-                }
-              </Row>
               </Col> 
             </Row>
-        </Container>
+          </Container>
         </div>
-        </>
+      </>
     );
 }
 
