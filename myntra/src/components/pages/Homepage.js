@@ -39,7 +39,7 @@ const HomePage = () => {
     //        Categories = current.category;
     //     });
     //   })
-    
+
     //   .catch((err) => {
     //     console.log(err.Message);
     //   } )
@@ -55,7 +55,7 @@ const HomePage = () => {
               </Col>
               <Col lg={6} className='flex filter-row' >
                 <div className='flex'>
-                <div className="hover-class" ref={refPrimary} onClick={hoverHandler}>
+                <div className="hover-class" ref={refPrimary}>
                 <span className='label-font padding'>Bundle</span>
                 <i class="fa fa-angle-down"></i>
                 </div>
